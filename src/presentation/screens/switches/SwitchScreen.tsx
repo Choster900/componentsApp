@@ -16,7 +16,7 @@ export default function SwitchScreen() {
     })
 
     return (
-        <CustomView style={{ marginTop: 100, paddingHorizontal: 10, backgroundColor: '#fff' }}>
+        <CustomView style={{ marginTop: 50, marginHorizontal: 10, borderRadius: 10, padding: 10, backgroundColor: '#fff' }}>
             <CustomSwitch
                 isOn={switchStates.isActive}
                 onChange={() => setSwitchStates(prev => ({ ...prev, isActive: !prev.isActive }))}
