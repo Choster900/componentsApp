@@ -30,11 +30,12 @@ export const globalStyles = StyleSheet.create({
     },
 
     mainContainer: {
-        flex: 1,
+        //flex: 1,
         backgroundColor: colors.background,
     },
     globalMargin: {
         paddingHorizontal: 20,
+        paddingVertical: 20,
         flex: 1,
     },
 

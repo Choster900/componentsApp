@@ -5,11 +5,16 @@ import { globalStyles } from '../../../config/theme/theme';
 interface CustomViewProps {
     style?: StyleProp<ViewStyle>;
     children?: React.ReactNode;
+    margin?: boolean;
 }
 
-export default function CustomView({ style, children }: CustomViewProps) {
+export default function CustomView({ style, children, margin }: CustomViewProps) {
     return (
-        <View style={[globalStyles.mainContainer, style]}>
+        <View style={[
+            globalStyles.mainContainer,
+            style,
+            margin ? globalStyles.globalMargin : null
+        ]}>
             {children}
         </View>
     )
