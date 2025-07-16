@@ -88,22 +88,21 @@ export const HomeScreen = () => {
                 <ScrollView>
                     <Title text="Home" safe={true} />
 
-
                     {
-                        menuItems.map((item, index) => (
+                        animationMenuItems.map((item, index) => (
                             <MenuItem key={index} {...item}
                                 isFirst={index === 0}
-                                isLast={index === menuItems.length - 1} />
+                                isLast={index === animationMenuItems.length - 1} />
                         ))
                     }
 
                     <View style={{ marginTop: 30 }} />
 
                     {
-                        animationMenuItems.map((item, index) => (
+                        menuItems.map((item, index) => (
                             <MenuItem key={index} {...item}
                                 isFirst={index === 0}
-                                isLast={index === animationMenuItems.length - 1} />
+                                isLast={index === menuItems.length - 1} />
                         ))
                     }
 
